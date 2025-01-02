@@ -1,0 +1,53 @@
+Тест № 1. Даем рекомендации пользователям без персональных рекомендаций (холодным)
+2025-01-02 17:02:51,678 - INFO - Starting test_recs for user_id: 1590750922765
+2025-01-02 17:02:51,879 - INFO - Recommendations received: {'recs': [53404, 178529, 33311009, 35505245, 6705392, 24692821, 37384, 795836, 328683, 60292250]}
+2025-01-02 17:02:51,879 - INFO - Starting test_recs for user_id: 7189467729365
+2025-01-02 17:02:51,885 - INFO - Recommendations received: {'recs': [53404, 178529, 33311009, 35505245, 6705392, 24692821, 37384, 795836, 328683, 60292250]}
+2025-01-02 17:02:51,886 - INFO - Starting test_recs for user_id: 1499665133082
+2025-01-02 17:02:51,892 - INFO - Recommendations received: {'recs': [53404, 178529, 33311009, 35505245, 6705392, 24692821, 37384, 795836, 328683, 60292250]}
+2025-01-02 17:02:51,892 - INFO - Starting test_recs for user_id: 5422969090345
+2025-01-02 17:02:51,897 - INFO - Recommendations received: {'recs': [53404, 178529, 33311009, 35505245, 6705392, 24692821, 37384, 795836, 328683, 60292250]}
+2025-01-02 17:02:51,897 - INFO - Starting test_recs for user_id: 2030804500849
+2025-01-02 17:02:51,902 - INFO - Recommendations received: {'recs': [53404, 178529, 33311009, 35505245, 6705392, 24692821, 37384, 795836, 328683, 60292250]}
+Тест № 2. Даем рекомендации пользователям, у которых есть история (персонализированные), но без онлайн
+2025-01-02 17:02:51,903 - INFO - Starting test_recs for user_id: 4
+2025-01-02 17:02:51,912 - INFO - Recommendations received: {'recs': [25062866, 1710810, 9769, 24327639, 1703893, 18820599, 598975, 41625041, 694683, 40493419]}
+2025-01-02 17:02:51,912 - INFO - Starting test_recs for user_id: 13
+2025-01-02 17:02:51,919 - INFO - Recommendations received: {'recs': [6024175, 59171695, 40322465, 17198356, 2781646, 10267563, 27317897, 28958148, 24442536, 19174962]}
+2025-01-02 17:02:51,919 - INFO - Starting test_recs for user_id: 14
+2025-01-02 17:02:51,923 - INFO - Recommendations received: {'recs': [54269757, 33311009, 53915878, 54014103, 37641523, 54501382, 51298376, 44858413, 44209075, 48925759]}
+2025-01-02 17:02:51,924 - INFO - Starting test_recs for user_id: 16
+2025-01-02 17:02:51,928 - INFO - Recommendations received: {'recs': [120142, 20167812, 19009110, 14355364, 923037, 20009250, 629747, 629497, 181291, 606570]}
+2025-01-02 17:02:51,928 - INFO - Starting test_recs for user_id: 19
+2025-01-02 17:02:51,933 - INFO - Recommendations received: {'recs': [138905, 592657, 69400, 12362, 727960, 2834232, 24327639, 628214, 783548, 170051]}
+Тест № 3. Даем рекомендации пользователям, у которых есть история (персонализированные), c учетом 3 их последних событий
+2025-01-02 17:02:51,933 - INFO - Starting test_online for user_id: 4
+2025-01-02 17:02:51,933 - INFO - Sending event for user_id: 4 with item_id: 53404
+2025-01-02 17:02:51,935 - INFO - Sending event for user_id: 4 with item_id: 178529
+2025-01-02 17:02:51,937 - INFO - Sending event for user_id: 4 with item_id: 33311009
+2025-01-02 17:02:52,129 - INFO - Online recommendations received: {'recs': [34976783, 25062866, 42197229, 1710810, 178495, 9769, 170252, 24327639, 29544272, 1703893]}
+{'recs': [34976783, 25062866, 42197229, 1710810, 178495, 9769, 170252, 24327639, 29544272, 1703893]}
+2025-01-02 17:02:52,129 - INFO - Starting test_online for user_id: 13
+2025-01-02 17:02:52,129 - INFO - Sending event for user_id: 13 with item_id: 53404
+2025-01-02 17:02:52,132 - INFO - Sending event for user_id: 13 with item_id: 178529
+2025-01-02 17:02:52,134 - INFO - Sending event for user_id: 13 with item_id: 33311009
+2025-01-02 17:02:52,186 - INFO - Online recommendations received: {'recs': [34976783, 6024175, 42197229, 59171695, 178495, 40322465, 170252, 17198356, 29544272, 2781646]}
+{'recs': [34976783, 6024175, 42197229, 59171695, 178495, 40322465, 170252, 17198356, 29544272, 2781646]}
+2025-01-02 17:02:52,186 - INFO - Starting test_online for user_id: 14
+2025-01-02 17:02:52,186 - INFO - Sending event for user_id: 14 with item_id: 53404
+2025-01-02 17:02:52,188 - INFO - Sending event for user_id: 14 with item_id: 178529
+2025-01-02 17:02:52,190 - INFO - Sending event for user_id: 14 with item_id: 33311009
+2025-01-02 17:02:52,245 - INFO - Online recommendations received: {'recs': [34976783, 54269757, 42197229, 33311009, 178495, 53915878, 170252, 54014103, 29544272, 37641523]}
+{'recs': [34976783, 54269757, 42197229, 33311009, 178495, 53915878, 170252, 54014103, 29544272, 37641523]}
+2025-01-02 17:02:52,246 - INFO - Starting test_online for user_id: 16
+2025-01-02 17:02:52,246 - INFO - Sending event for user_id: 16 with item_id: 53404
+2025-01-02 17:02:52,248 - INFO - Sending event for user_id: 16 with item_id: 178529
+2025-01-02 17:02:52,250 - INFO - Sending event for user_id: 16 with item_id: 33311009
+2025-01-02 17:02:52,302 - INFO - Online recommendations received: {'recs': [34976783, 120142, 42197229, 20167812, 178495, 19009110, 170252, 14355364, 29544272, 923037]}
+{'recs': [34976783, 120142, 42197229, 20167812, 178495, 19009110, 170252, 14355364, 29544272, 923037]}
+2025-01-02 17:02:52,302 - INFO - Starting test_online for user_id: 19
+2025-01-02 17:02:52,302 - INFO - Sending event for user_id: 19 with item_id: 53404
+2025-01-02 17:02:52,305 - INFO - Sending event for user_id: 19 with item_id: 178529
+2025-01-02 17:02:52,307 - INFO - Sending event for user_id: 19 with item_id: 33311009
+2025-01-02 17:02:52,360 - INFO - Online recommendations received: {'recs': [34976783, 138905, 42197229, 592657, 178495, 69400, 170252, 12362, 29544272, 727960]}
+{'recs': [34976783, 138905, 42197229, 592657, 178495, 69400, 170252, 12362, 29544272, 727960]}
